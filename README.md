@@ -1,7 +1,7 @@
 # CPBS 7602 Assignment 02 — Linear & Logistic Modeling with GTEx Expression Data
 
 ## Course: Introduction to Big Data in the Biomedical Sciences (CPBS 7602)  
-**Instructors:** Lauren Vanderlinden & Milton Pividori  
+**Instructors:** Milton Pividori  
 **Institution:** University of Colorado Anschutz Medical Campus  
 **Student:** Saloni Dixon  
 
