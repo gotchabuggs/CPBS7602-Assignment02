@@ -31,7 +31,7 @@ Files used:
 - `GTEx_Analysis_v8_Annotations_SubjectPhenotypesDS.txt`
 
 ### Metadata fields used
-- **Tissue (SMTS)** — filtered to Brain and Whole Blood  
+- **Tissue (SMTS)** — filtered to Brain and Blood  
 - **SUBJID** — used to merge sample and subject-level metadata  
 - **AGE** — converted to numeric midpoints  
 - **SEX** — recoded into binary (1 = male, 0 = female)
@@ -77,7 +77,7 @@ Where:
 ### Interpretation
 - **β₁** reflects the standardized difference in expression between Brain and Blood **after adjusting for age and sex**.  
 - Positive β₁ → gene expression is higher in Brain.  
-- Negative β₁ → gene expression is higher in Whole Blood.  
+- Negative β₁ → gene expression is higher in Blood.  
 
 ### Reported:
 - **Top 5 most significant genes** by p-value  
@@ -88,7 +88,7 @@ Results show extremely strong Brain–Blood differences, consistent with known t
 ---
 
 ## 3. Logistic Regression  
-_Predicting sex from Whole Blood gene expression_
+_Predicting sex from Blood gene expression_
 
 For each gene, I fit the logistic regression model:
 
@@ -140,7 +140,7 @@ Overall, logistic regression confirms that **sex is highly predictable from bloo
 This analysis demonstrates that regression-based modeling effectively identifies biological signals in high-dimensional gene expression data.
 
 - **Brain vs Blood differences** are extremely strong and consistent with known tissue-specific transcriptional programs.
-- **Sex differences in Whole Blood** are so pronounced that many genes exhibit quasi-complete separation in logistic regression.
+- **Sex differences in Blood** are so pronounced that many genes exhibit quasi-complete separation in logistic regression.
 - Including **age and sex as covariates** in the linear model ensured confounding was controlled.
 - Standardization allowed direct comparison of β values across genes.
 
@@ -166,5 +166,5 @@ Alternatively, install the key dependencies manually:
 
 ### How to Run
 From inside the cloned repo or folder:
-'jupyter notebook assignment_1.ipynb'
+'jupyter notebook assignment_02.ipynb'
 Rull all cells sequentially for full analysis.
