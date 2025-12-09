@@ -60,12 +60,7 @@ _Assessing expression differences between Brain and Blood_
 For each of 5,000 genes, I fit the model:
 
 $$
-\text{Expression}_{g,i}
-= \beta_0
-+ \beta_1 \cdot \text{Tissue}_{i}
-+ \beta_2 \cdot \text{Age}_{i}
-+ \beta_3 \cdot \text{Sex}_{i}
-+ \epsilon_i
+\text{Expression}_{g,i} = \beta_0 + \beta_1 \cdot \text{Tissue}_i + \beta_2 \cdot \text{Age}_i + \beta_3 \cdot \text{Sex}_i + \epsilon_i
 $$
 
 Where:
